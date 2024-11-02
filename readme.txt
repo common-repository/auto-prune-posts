@@ -2,8 +2,8 @@
 Contributors: Ramon Fincken
 Tags: mass, prune, delete, expire, clean, remove, trash, attachment, attachments, coupon, schedule, post, posts, category, CPT
 Requires at least: 2.3
-Tested up to: 6.1.1
-Stable tag: 2.0.0
+Tested up to: 6.6.2
+Stable tag: 3.0.0
 
 Auto deletes expires (prunes) posts after a certain amount of time. On a per category basis (single category, or all at once.)<br>
 Handy if you want to have posts with a limited timeframe such as offers, coupons etc.. Posts will auto delete on a per category basis.
@@ -34,11 +34,14 @@ Donate <a href="http://donate.ramonfincken.com/">http://donate.ramonfincken.com/
 
 = I have a lot of questions and I want support where can I go? =
 
-<a href="http://pluginsupport.mijnpress.nl/">http://pluginsupport.mijnpress.nl/</a> or drop me a tweet to notify me of your support topic over here.<br>
-I always check my tweets, so mention my name with @ramonfincken and your problem.
+<a href="https://pluginsupport.mijnpress.nl/">https://pluginsupport.mijnpress.nl/</a> or drop me a tweet to notify me of your support topic over here.<br>
+I always check my toots, so mention my name with https://mastodon.social/deck/@ramonfincken and your problem.
 
 
 == Changelog ==
+= 3.0.0 =
+Bugfix: XSS in POST types
+
 = 2.0.0 =
 Bugfix: Added nonces for admin forms (CSRF)
 Bugfix: PHP 8 compatibility

@@ -3,7 +3,7 @@
  Plugin Name: Auto Prune Posts
  Plugin URI: https://www.mijnpress.nl
  Description: Auto deletes expires (prunes) posts after a certain amount of time. On a per category basis.
- Version: 2.0.0
+ Version: 3.0.0
  Author: Ramon Fincken
  Author URI: https://www.mijnpress.nl
  Created on 31-oct-2010 17:33:40
@@ -158,7 +158,7 @@ class plugin_auto_prune_posts extends mijnpress_plugin_framework
 						$action_taken = true;
 					}
 
-					$types_new = $_POST['types'];
+					$types_new = preg_replace( '/[^a-z,-]/i', '', $_POST['types'] );
 					if($plugin->conf['settings']['types'] != $types_new)
 					{
 						$plugin->conf['settings']['types'] = $types_new;
